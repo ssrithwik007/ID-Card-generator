@@ -3,11 +3,11 @@ import textwrap, os
 from io import BytesIO
 
 base_dir = os.path.dirname(__file__)
-image = Image.open(os.path.join(base_dir, "assets\\id_card_template.png")).convert("RGBA")
-text_font = ImageFont.truetype(os.path.join(base_dir, "assets\\ComicRelief-Regular.ttf"), 30)
-title_font = ImageFont.truetype(os.path.join(base_dir, "assets\\ComicRelief-Regular.ttf"), 60)
-info_font = ImageFont.truetype(os.path.join(base_dir, "assets\\ComicRelief-Regular.ttf"), 20)
-sign_font = ImageFont.truetype(os.path.join(base_dir, "assets\\Signatie.otf"), 40)
+image = Image.open(os.path.join(base_dir, "assets/id_card_template.png")).convert("RGBA")
+text_font = ImageFont.truetype(os.path.join(base_dir, "assets/ComicRelief-Regular.ttf"), 30)
+title_font = ImageFont.truetype(os.path.join(base_dir, "assets/ComicRelief-Regular.ttf"), 60)
+info_font = ImageFont.truetype(os.path.join(base_dir, "assets/ComicRelief-Regular.ttf"), 20)
+sign_font = ImageFont.truetype(os.path.join(base_dir, "assets/Signatie.otf"), 40)
 
 def generate(data):
     #
